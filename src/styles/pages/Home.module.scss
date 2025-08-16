@@ -38,18 +38,14 @@
   text-align: center;
   position: relative;
   z-index: 2;
-  max-width: 650px;
+  max-width: 720px;
   width: 100%;
   opacity: 0;
   animation: fadeInUp 1.2s ease-out 0.3s forwards;
-
-  @include for-desktop-only {
-    max-width: 720px;
-  }
 }
 
 .logoContainer {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   position: relative;
   opacity: 0;
   transform: scale(0.8) translateY(20px);
@@ -61,8 +57,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     background: radial-gradient(
       circle,
       rgba(59, 130, 246, 0.2) 0%,
@@ -73,11 +69,6 @@
     z-index: -1;
     opacity: 0;
     animation: glowAppear 1.5s ease-out 0.8s forwards;
-
-    @include for-desktop-only {
-      width: 180px;
-      height: 180px;
-    }
 
     @include for-tablet-only {
       width: 140px;
@@ -90,23 +81,15 @@
     }
   }
 
-  @include for-desktop-only {
-    margin-bottom: 2rem;
-  }
-
   @include for-tablet-only {
-    margin-bottom: 1.75rem;
-  }
-
-  @include for-phone-only {
     margin-bottom: 1.75rem;
   }
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
+  width: 125px;
+  height: 125px;
+  border-radius: 25px;
   transition: transform 0.3s ease;
   object-fit: cover;
 
@@ -114,19 +97,7 @@
     transform: scale(1.05);
   }
 
-  @include for-desktop-only {
-    width: 125px;
-    height: 125px;
-    border-radius: 25px;
-  }
-
   @include for-tablet-only {
-    width: 110px;
-    height: 110px;
-    border-radius: 22px;
-  }
-
-  @include for-phone-only {
     width: 110px;
     height: 110px;
     border-radius: 22px;
@@ -140,10 +111,10 @@
 }
 
 .title {
-  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-size: clamp(3.75rem, 7vw, 5rem);
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
   letter-spacing: -0.02em;
   background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 100%);
   background-clip: text;
@@ -154,11 +125,6 @@
   transform: translateY(30px);
   animation: slideInFade 0.8s ease-out 0.8s forwards;
 
-  @include for-desktop-only {
-    font-size: clamp(3.75rem, 7vw, 5rem);
-    margin-bottom: 1.25rem;
-  }
-
   @include for-tablet-only {
     font-size: clamp(3rem, 6.5vw, 4rem);
     margin-bottom: 1rem;
@@ -166,24 +132,18 @@
 
   @include for-phone-only {
     font-size: clamp(3rem, 9vw, 4rem);
-    margin-bottom: 1rem;
   }
 }
 
 .subtitle {
-  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-size: clamp(1.5rem, 3vw, 1.875rem);
   color: #a1a1aa;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   letter-spacing: 0.01em;
   opacity: 0;
   transform: translateY(20px);
   animation: slideInFade 0.8s ease-out 1s forwards;
-
-  @include for-desktop-only {
-    font-size: clamp(1.5rem, 3vw, 1.875rem);
-    margin-bottom: 2.5rem;
-  }
 
   @include for-tablet-only {
     font-size: clamp(1.375rem, 2.75vw, 1.5rem);
@@ -192,35 +152,26 @@
 
   @include for-phone-only {
     font-size: clamp(1.375rem, 4.5vw, 1.625rem);
-    margin-bottom: 2.25rem;
   }
 }
 
 .comingSoon {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.875rem;
   margin-top: 1rem;
   opacity: 0;
   transform: translateY(15px);
   animation: slideInFade 0.8s ease-out 1.2s forwards;
 
-  @include for-desktop-only {
-    gap: 0.875rem;
-  }
-
   @include for-tablet-only {
-    gap: 0.625rem;
-  }
-
-  @include for-phone-only {
     gap: 0.625rem;
   }
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: #9437ff;
   animation: pulse 1.5s infinite ease-in-out;
@@ -245,17 +196,7 @@
       pulse 1.5s infinite ease-in-out 2.4s;
   }
 
-  @include for-desktop-only {
-    width: 12px;
-    height: 12px;
-  }
-
   @include for-tablet-only {
-    width: 10px;
-    height: 10px;
-  }
-
-  @include for-phone-only {
     width: 10px;
     height: 10px;
   }
@@ -264,16 +205,11 @@
 .socialButtons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 4rem;
+  gap: 1.5rem;
+  margin-top: 4.5rem;
   opacity: 0;
   transform: translateY(20px);
   animation: slideInFade 0.8s ease-out 1.8s forwards;
-
-  @include for-desktop-only {
-    gap: 1.5rem;
-    margin-top: 4.5rem;
-  }
 
   @include for-tablet-only {
     gap: 1.25rem;
@@ -296,12 +232,12 @@
   display: flex !important;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.75rem 1.5rem !important;
-  font-size: 0.9rem;
+  padding: 0.875rem 1.75rem !important;
+  font-size: 1rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
   transition: all 0.3s ease;
-  min-width: 120px;
+  min-width: 140px;
   justify-content: center;
 
   &:hover {
@@ -311,12 +247,6 @@
     .socialIcon {
       transform: scale(1.1);
     }
-  }
-
-  @include for-desktop-only {
-    padding: 0.875rem 1.75rem !important;
-    font-size: 1rem;
-    min-width: 140px;
   }
 
   @include for-tablet-only {
@@ -335,15 +265,10 @@
 }
 
 .socialIcon {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   transition: transform 0.3s ease;
   flex-shrink: 0;
-
-  @include for-desktop-only {
-    width: 20px;
-    height: 20px;
-  }
 
   @include for-phone-only {
     width: 19px;
