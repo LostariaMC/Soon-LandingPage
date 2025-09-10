@@ -5,7 +5,7 @@ This project is a web landing page, based on React
 ## Requirements
 
 This project requires the following to get started:
-- Node.js version 18.15 or higher
+- Node.js version `18.15` or higher
 
 ## Getting Started
 
