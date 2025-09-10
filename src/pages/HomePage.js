@@ -1,7 +1,7 @@
 import styles from "../styles/pages/Home.module.scss";
 import logoImg from "../assets/img/logo.png";
 import LiquidGlassButton from "../components/LiquidGlassButton";
-import { DiscordIcon, TwitterIcon } from "../utils/Icons";
+import { DiscordIcon, ShopIcon, TwitterIcon } from "../utils/Icons";
 
 const HomePage = () => {
   const handleTwitterClick = () => {
@@ -14,6 +14,10 @@ const HomePage = () => {
       "_blank",
       "noopener,noreferrer",
     );
+  };
+
+  const handleShopClick = () => {
+    window.open("https://shop.lostaria.fr", "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -45,6 +49,14 @@ const HomePage = () => {
           >
             <DiscordIcon className={styles.socialIcon} />
             Discord
+          </LiquidGlassButton>
+          <LiquidGlassButton
+            className={styles.socialButton}
+            onClick={handleShopClick}
+            arialLabel="Aller sur la boutique"
+          >
+            <ShopIcon className={styles.socialIcon} />
+            Boutique
           </LiquidGlassButton>
         </div>
       </div>
